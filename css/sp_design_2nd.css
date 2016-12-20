@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* 2階層目（products.html / list.html）限定の指定を記載 */
+
+.item_list h2,#shopping_gide h2{
+	background: transparent;
+}
+
+/* ItemList */
+.item_list li{
+	width: 50%;
+}
+
+/* Shopping Guide */
+.guide_box{
+	width:100%;
+}
+
+/* 商品詳細ページに関する設定 */
+#products_box{
+	padding: 15px;
+}
+/* 商品名部分 */
+#products_name{
+	padding:0;
+}
+#products_id{
+	display:block;
+	padding:10px 0;
+}
+
+
+/* ギャラリー部分 */
+#main_view img{
+	border-bottom:3px solid #fff;
+}
+#pict_list{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+#pict_list li{
+	width:20%;
+}
+#pict_list li img{
+	border:2px solid #fff;
+}
+
+/* Form部分 */
+#cart_box{
+	border:none;
+}
+
+#form_wrapper{
+	width:100%;
+}
+#btn_cart{
+	width:100%;
+	text-align: center;
+}
+#btn_cart input{
+	margin:0 auto 20px;
+	float:none;
+}
