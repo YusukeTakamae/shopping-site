@@ -12,12 +12,8 @@
     <meta name="copyright" content=""><!--権利を主張-->
     <meta name="robots" content="noindex,nofollow"><!--検索されたく無いから明記-->
     <meta name="googlebot" content="noindex,nofollow"><!--検索されたく無いから明記-->
-    <meta http-equiv="pragma" content="no-cache"><!--キャッシュ対策-->
-    <meta http-equiv="cache-control" content="no-cache"><!--キャッシュ対策-->
-    <meta http-equiv="expires" content="0"><!--キャッシュ対策-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--IE互換モードにならないよう-->
-    <meta http-equiv="Content-Script-Type" content="text/javascript;"><!--JS使う宣言-->
-    <meta http-equiv="Content-Style-Type" content="text/css;"><!--CSS使う宣言 -->
+
     
     <!-- IE9以下でメディアクエリを使えるように -->
     <!--[if lt IE 9]>
@@ -30,7 +26,6 @@
     <link rel="icon" href="./image/favicon.png"><!-- fabiconの指定 -->
     <link rel="apple-touch-icon" href="./image/apple-touch-icon"><!-- SPブックマーク用の指定 -->
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/vnd.microsoft.ico"><!-- fabiconの指定 -->
-    <link rev="made" href=""><!-- 作った人の連絡先 -->
     <link rel="home" href="./" title="APPLE BERRY"><!-- どこがHOMEなのかを明記 -->
     
   </head>
@@ -227,13 +222,13 @@
         
           <div id="sub_field" class="three columns">
           <article id="search_engine">
-            <from action="#" method="post" name="search_engines">
+            <form action="#" method="post" name="search_engines">
               <h4 class="sans"><label for="search_txt">ITEM SEARCH</label></h4>
               <dl>
                 <dt><input type="search" id="search_txt" placeholder="Search..." value="" name="search" size="30" maxlength="255"></dt>
-                <dd><input type="image" src="./images/top/search_icon.png"></dd>
+                <dd><input type="image" src="./images/top/search_icon.png" alt="検索"></dd>
               </dl>
-            </from>
+            </form>
           </article>
           
           <article id="page_link" class="sub_box link_box">
